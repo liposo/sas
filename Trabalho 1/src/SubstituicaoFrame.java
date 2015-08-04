@@ -156,8 +156,9 @@ public class SubstituicaoFrame extends JFrame {
 				for(int i=0; i<len; i++)
 				{
 					b = buff[i];
+					int bb = Byte.toUnsignedInt(b);
 					
-					int bc = tabChave[b].intValue();
+					int bc = tabChave[bb];
 					
 					byte newbyte = (byte) bc;
 					
