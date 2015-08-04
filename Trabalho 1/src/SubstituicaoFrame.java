@@ -21,7 +21,7 @@ public class SubstituicaoFrame extends JFrame {
 	public SubstituicaoFrame()
 	{
 		super();
-		this.setSize(500, 500);
+		this.setSize(250, 250);
 		this.setTitle("Substituição");
 
 		
