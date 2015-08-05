@@ -23,8 +23,6 @@ public class SubstituicaoFrame extends JFrame {
 		super();
 		this.setSize(250, 250);
 		this.setTitle("Substituição");
-
-		
 		
 		JScrollPane scroll = new JScrollPane(memo);
 		scroll.setSize(300,300);
@@ -45,7 +43,6 @@ public class SubstituicaoFrame extends JFrame {
 		
 		this.setLocationRelativeTo(null);
 		
-		
 		button.addActionListener(new ActionListener() {
 			
 			@Override
@@ -53,8 +50,6 @@ public class SubstituicaoFrame extends JFrame {
 				openFile();
 			}
 		});
-		
-	
 	}
 	
 	private void openFile() 
@@ -75,8 +70,6 @@ public class SubstituicaoFrame extends JFrame {
 				{
 					criptografar(file);
 				}
-				
-				
 			}
 				
 		}
@@ -84,7 +77,6 @@ public class SubstituicaoFrame extends JFrame {
 		{
 			JOptionPane.showMessageDialog(this, "Pau: "+ex.getMessage());
 		}
-	
 	}
 	
 	private void descriptografar(File file) throws Exception{
@@ -93,7 +85,6 @@ public class SubstituicaoFrame extends JFrame {
 		
 		String nomeOriginal = file.getName().substring(0, file.getName().lastIndexOf(".subs"));
 		String extOriginal = nomeOriginal.substring(nomeOriginal.lastIndexOf("."));
-		//String novoNome = nomeOriginal.substring(0, nomeOriginal.lastIndexOf("."));
 		String novoNome = file.getName() + extOriginal;
 		
 		File fileOut = new File(novoNome);
@@ -175,7 +166,6 @@ public class SubstituicaoFrame extends JFrame {
 		}
 		
 		JOptionPane.showMessageDialog(this, "Feito" );
-
 	}
 	
 	/*
@@ -195,5 +185,4 @@ public class SubstituicaoFrame extends JFrame {
 					lista.remove(idx);
 				}
 	*/
-	
 }

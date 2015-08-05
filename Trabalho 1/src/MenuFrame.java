@@ -59,15 +59,29 @@ public class MenuFrame extends JFrame {
 			}
 		});
 		
-		
 		buttonSubstituicao.addActionListener(new ActionListener() {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				new SubstituicaoFrame();
 			}
-		});		
+		});
 		
+		buttonTransposicao.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				new TransposicaoFrame();
+			}
+		});
+		
+		buttonVigenere.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				new VigenereFrame();
+			}
+		});	
 		
 	}
 
