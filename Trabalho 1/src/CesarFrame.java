@@ -12,11 +12,16 @@ public class CesarFrame extends JFrame {
 
 	private JSpinner spinnerChave;
 	
+	//private JTextArea memo = new JTextArea();
+	
 	public CesarFrame()
 	{
 		super();
 		this.setSize(300, 90);
 		this.setTitle("Cesar");
+		
+		//JScrollPane scroll = new JScrollPane(memo);
+		//scroll.setSize(300,300);
 		
 		JLabel labelChave = new JLabel("Chave: ");
 		spinnerChave = new JSpinner(new SpinnerNumberModel(0, 0, 255, 1));
@@ -25,6 +30,8 @@ public class CesarFrame extends JFrame {
 		FlowLayout flow = new FlowLayout(FlowLayout.LEFT, 15, 15);
 		
 		this.setLayout(flow);
+		
+		//this.add(scroll);
 		
 		this.add(labelChave);
 		
@@ -38,7 +45,6 @@ public class CesarFrame extends JFrame {
 		
 		this.setLocationRelativeTo(null);
 		
-		
 		button.addActionListener(new ActionListener() {
 			
 			@Override
@@ -46,8 +52,6 @@ public class CesarFrame extends JFrame {
 				openFile();
 			}
 		});
-		
-	
 	}
 	
 	private void openFile() 
@@ -58,7 +62,6 @@ public class CesarFrame extends JFrame {
 		
 			if (fc.showOpenDialog(this) == 0)
 			{
-				
 				File file = fc.getSelectedFile();
 				
 				if (file.getName().endsWith(".cesar")) {
@@ -68,16 +71,12 @@ public class CesarFrame extends JFrame {
 				{
 					criptografar(file);
 				}
-				
-				
 			}
-				
 		}
 		catch(Exception ex)
 		{
 			JOptionPane.showMessageDialog(this, "Pau: "+ex.getMessage());
 		}
-	
 	}
 	
 	private void descriptografar(File file) throws Exception{
@@ -106,15 +105,13 @@ public class CesarFrame extends JFrame {
 				{
 					b = buff[i];
 					
-					int bc = b - chave;
+					int bc = Byte.toUnsignedInt(b) - chave;
 					
 					if (bc <  0)
 					{
 						bc = bc + 255;
 					}
-					
 					byte newbyte = (byte) bc;
-					
 					output.write(newbyte);
 				}
 			}
@@ -124,7 +121,6 @@ public class CesarFrame extends JFrame {
 			output.close();
 			input.close();
 		}
-		
 		JOptionPane.showMessageDialog(this, "Feito" );
 	}
 	
@@ -148,16 +144,13 @@ public class CesarFrame extends JFrame {
 				for(int i=0; i<len; i++)
 				{
 					b = buff[i];
-					
-					int bc = b + chave;
+					int bc = Byte.toUnsignedInt(b) + chave;
 					
 					if (bc >  255)
 					{
 						bc = bc - 255;
 					}
-					
 					byte newbyte = (byte) bc;
-					
 					output.write(newbyte);
 				}
 			}
@@ -167,9 +160,6 @@ public class CesarFrame extends JFrame {
 			output.close();
 			input.close();
 		}
-		
 		JOptionPane.showMessageDialog(this, "Feito" );
-
 	}
-	
 }
