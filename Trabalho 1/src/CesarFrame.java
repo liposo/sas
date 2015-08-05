@@ -32,7 +32,7 @@ public class CesarFrame extends JFrame {
 		
 		this.add(button);
 		
-		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		this.setVisible(true);
 		this.setResizable(false);
 		

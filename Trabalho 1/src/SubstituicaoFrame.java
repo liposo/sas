@@ -39,7 +39,7 @@ public class SubstituicaoFrame extends JFrame {
 		
 		this.add(button, BorderLayout.SOUTH);
 		
-		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		this.setVisible(true);
 		this.setResizable(false);
 		
