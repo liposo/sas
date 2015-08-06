@@ -26,7 +26,7 @@ elemento y correspondente.
 Se o arquivo selecionado for um já criptografado pela cifra de Substituição(arquivo.subs) ele será descriptografado.
 
 ## 3- Cifra de Transposição
-[Ainda possui alguns detalhes para serem resolvidos.]
+
 ![Alt tag](https://raw.githubusercontent.com/liposo/sas/master/Trabalho%201/img/transp.PNG)
 
 ###Utilização

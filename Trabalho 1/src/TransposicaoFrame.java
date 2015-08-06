@@ -154,14 +154,14 @@ public class TransposicaoFrame extends JFrame {
 			}
 			
 			byte[] ultimaLinha = matriz.get(matriz.size()-1);
-			int qtdeZeros=0;
-			for (int i=ultimaLinha.length-1; i>=0; i--)
+			int qtdeZeros = ultimaLinha[ultimaLinha.length-1];
+			/*for (int i=ultimaLinha.length-1; i>=0; i--)
 			{
 				if (ultimaLinha[i] == 0)
 				{
 					qtdeZeros++;
 				}
-			}
+			}*/
 			
 			ultimaLinha = Arrays.copyOf(ultimaLinha, ultimaLinha.length-qtdeZeros);
 			matriz.remove(matriz.size()-1);
@@ -240,9 +240,11 @@ public class TransposicaoFrame extends JFrame {
 				{
 					linha[idxLinha] = 0;
 					idxLinha++;
-					nZeros += nZeros;
+					++nZeros;
 				}
-				matriz.add(linha);				
+				memo.append("- Zeros Adicionados: -"+"\r\n"+nZeros+"\r\n"+"--"+"\r\n");
+				linha[linha.length-1] = (byte) nZeros;
+				matriz.add(linha);
 			}
 			
 				
