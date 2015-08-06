@@ -12,7 +12,7 @@ Tipo de cifra de substituição em que cada caractere é movido um número fixo 
 
 ###Utilização:
     1-informe uma chave.
-    2-selecione um arquivo.
+    2-selecione um arquivo, ele será criptografado.
   Se o arquivo selecionado for um já criptografado pela cifra de César(arquivo.cesar) ele será descriptografado.
 
 ## 2- Cifra de Substituição:
@@ -22,5 +22,23 @@ elemento y correspondente.
 ![Alt tag](https://raw.githubusercontent.com/liposo/sas/master/Trabalho%201/img/subs.PNG)
 
 ###Utilização:
-    1-selecione um arquivo.
+    1-selecione um arquivo, ele será criptografado.
   Se o arquivo selecionado for um já criptografado pela cifra de Substituição(arquivo.subs) ele será descriptografado.
+
+## 3- Cifra de Transposição
+[Ainda possui alguns detalhes para serem resolvidos.]
+![Alt tag](https://raw.githubusercontent.com/liposo/sas/master/Trabalho%201/img/transp.PNG)
+
+###Utilização
+1-informe uma chave.
+2-selecione um arquivo, ele será criptografado.
+Se o arquivo selecionado for um já criptografado pela cifra de Transposição(arquivo.transp) ele será descriptografado.
+
+## 4- Cifra de Vigenère
+
+![Alt tag](https://raw.githubusercontent.com/liposo/sas/master/Trabalho%201/img/vig.PNG)
+
+###Utilização
+1-informe uma chave.
+2-selecione um arquivo, ele será criptografado.
+Se o arquivo selecionado for um já criptografado pela cifra de Vigenère(arquivo.vig) ele será descriptografado.
