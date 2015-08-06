@@ -1,18 +1,18 @@
 # Trabalho 1
 Implementação em Java.
 
-##Runnables
+###Runnables
 #Versão 0.4
 
-#Implementado:
-## 1- Cifra de César:
+##Implementado:
+#### 1- Cifra de César:
 Encripta e Decripta.
 
-## 2- Cifra de Substituição: 
+#### 2- Cifra de Substituição: 
 Encripta e Decripta.
 
-## 3- Cifra de Substituição
+#### 3- Cifra de Substituição
 Encripta e Decripta, existem detalhes a serem resolvidos.
 
-## 4- Cifra de Vigenère
+#### 4- Cifra de Vigenère
 Encripta e Decripta.
