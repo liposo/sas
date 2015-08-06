@@ -2,15 +2,17 @@
 Implementação em Java.
 
 ##Runnables
-#Versão 0.2
-
-![Alt tag](https://raw.githubusercontent.com/liposo/sas/master/Trabalho%201/img/menu.PNG)
+#Versão 0.4
 
 #Implementado:
 ## 1- Cifra de César:
+Encripta e Decripta.
 
-![Alt tag](https://raw.githubusercontent.com/liposo/sas/master/Trabalho%201/img/cesar.PNG)
+## 2- Cifra de Substituição: 
+Encripta e Decripta.
 
-## 2- Cifra de Substituição:
+## 3- Cifra de Substituição
+Encripta e Decripta, existem detalhes a serem resolvidos.
 
-![Alt tag](https://raw.githubusercontent.com/liposo/sas/master/Trabalho%201/img/subs.PNG)
+## 4- Cifra de Vigenère
+Encripta e Decripta.
