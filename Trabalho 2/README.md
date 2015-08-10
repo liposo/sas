@@ -3,4 +3,4 @@ Recebe dois arquivos, um arquivo original e ele criptografado por uma das cifras
 Descobre e exibe a chave utilizada para a criptografia.
 
 ##Versão 0.1
-//![Alt tag](https://raw.githubusercontent.com/liposo/sas/master/Trabalho%201/img/main.PNG)
+![Alt tag](https://raw.githubusercontent.com/liposo/sas/master/Trabalho%202/img/main.PNG)
