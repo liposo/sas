@@ -26,7 +26,7 @@ public class cesar {
 			if(confirma) {
 				JOptionPane.showMessageDialog(null, "Cifra de César, chave = "+chaveCesar);
 			} else {
-				JOptionPane.showMessageDialog(null, "Não é Cifra de César!");
+				JOptionPane.showMessageDialog(null,"Chave não identificada. Possivel que não seja Cifra de César!");
 			}
 		} else {
 			JOptionPane.showMessageDialog(null, "Arquivos com tamanhos diferente, não é cifra de César");

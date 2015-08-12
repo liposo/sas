@@ -56,5 +56,4 @@ public class loadListFromFile {
 	public int getEncryptedBytesLen() {
 		 return encryptedBytesLen;
 	}
-	
 }
