@@ -1,12 +1,8 @@
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.LinkedHashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
 import javax.swing.JFrame;
@@ -44,8 +40,7 @@ public class vigenere {
 				}
 			}
 			if(confirma) {
-				JOptionPane.showMessageDialog(null, "Cifra de Vigenère");
-				buildAndDisplayChaveFrame(chaveVigenere);
+				JOptionPane.showMessageDialog(null, "Cifra de Vigenère, chave = "+mostraChave(chaveVigenere));
 			} else {
 				JOptionPane.showMessageDialog(null,"Chave não identificada. Possivel que não seja Cifra de Vigenère!");
 			}
@@ -54,24 +49,24 @@ public class vigenere {
 		}
 	}
 	
-private void buildAndDisplayChaveFrame(int[] chaveVigenere) {
+	private String mostraChave(int[] chaveVigenere) {
 		
-		JFrame subsFrame = new JFrame();
-		JTextArea memo = new JTextArea();
-		JScrollPane scroll = new JScrollPane(memo);
-		
-		scroll.setSize(600,300);
-		memo.setLineWrap(true);
-		memo.setWrapStyleWord(true);
-		subsFrame = new JFrame();
-		subsFrame.setTitle("Chave - Substituição");
-		subsFrame.setSize(300, 300);
-		subsFrame.setVisible(true);
-		subsFrame.setResizable(true);
-		subsFrame.setLocationRelativeTo(null);
-		subsFrame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
-		subsFrame.add(scroll);
-		
+//		JFrame subsFrame = new JFrame();
+//		JTextArea memo = new JTextArea();
+//		JScrollPane scroll = new JScrollPane(memo);
+//		
+//		scroll.setSize(600,300);
+//		memo.setLineWrap(true);
+//		memo.setWrapStyleWord(true);
+//		subsFrame = new JFrame();
+//		subsFrame.setTitle("Chave - Substituição");
+//		subsFrame.setSize(300, 300);
+//		subsFrame.setVisible(true);
+//		subsFrame.setResizable(true);
+//		subsFrame.setLocationRelativeTo(null);
+//		subsFrame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+//		subsFrame.add(scroll);
+//		
 		char[] chaveChar = new char[chaveVigenere.length];
 	
 		for(int i=0; i<chaveVigenere.length; i++) {
@@ -93,9 +88,26 @@ private void buildAndDisplayChaveFrame(int[] chaveVigenere) {
             //System.out.println(word + ": " + Collections.frequency(chaveList, word));
             uniqueChars.add(word.charAt(i));
         }
-        for(int a=0; a<uniqueChars.size(); a++) {
-        	//System.out.print(uniqueChars.get(a));
-        	memo.append(uniqueChars.get(a).toString());
+//        for(int a=0; a<uniqueChars.size(); a++) {
+//        	//System.out.print(uniqueChars.get(a));
+//        	memo.append(uniqueChars.get(a).toString());
+//        }
+        String[] strArray = new String[] {chaveString};
+        String chaveFinal = null;
+        String repeated = null;
+        for (String str : strArray) {
+            repeated = str.replaceAll("(.+?)\\1+", "$1-");
+            //System.out.println(repeated);
+            //memo.append(repeated);
         }
+        if (repeated.contains("-")) {
+            // Split it.
+        	String[] parts = repeated.split("-");
+        	chaveFinal = parts[0]; 
+        } else {
+            throw new IllegalArgumentException("String " + repeated + " does not contain -");
+        }
+        //memo.append(chaveFinal);
+        return chaveFinal;
 	}
 }
