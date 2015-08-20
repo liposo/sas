@@ -35,7 +35,7 @@ Nessa cifra é formada uma matriz onde a quantidade de linhas é igual ao valor 
 
 Criptografar               |  Descriptografar
 :-------------------------:|:-------------------------:
-![ScreenShot](/Reimplementação%20do%20Trabalho%201/img/transEnc.PNG)  |  ![ScreenShot](/Reimplementação%20do%20Trabalho%201/img/transpDec.PNG)
+![ScreenShot](/Reimplementação%20do%20Trabalho%201/img/transpEnc.PNG)  |  ![ScreenShot](/Reimplementação%20do%20Trabalho%201/img/transpDec.PNG)
 
 #####Utilização
     1-Selecione um arquivo.
