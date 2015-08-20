@@ -3,14 +3,14 @@ Implementação em Java de quatro métodos clássicos de criptografia.
 
 Main                       |  Arquivo Selecionado
 :-------------------------:|:-------------------------:
-![ScreenShot](/Reimplementação%20do%20Trabalho%201/img/main.PNG)|![ScreenShot](/img/mainSelectedFile.PNG)
+![ScreenShot](/Reimplementação%20do%20Trabalho%201/img/main.PNG)|![ScreenShot](/Reimplementação%20do%20Trabalho%201/img/mainSelectedFile.PNG)
 
 #### 1- Cifra de César:
 Tipo de cifra de substituição em que cada caractere é movido um número fixo de vezes.
 
 Criptografar               |  Descriptografar
 :-------------------------:|:-------------------------:
-![ScreenShot](/img/cesarEnc.PNG)  |  ![ScreenShot](/img/cesarDec.PNG)
+![ScreenShot](/Reimplementação%20do%20Trabalho%201/img/cesarEnc.PNG)  |  ![ScreenShot](/Reimplementação%20do%20Trabalho%201/img/cesarDec.PNG)
 
 #####Utilização:
     1-Selecione um arquivo.
@@ -23,7 +23,7 @@ elemento correspondente da tabela.
 
 Criptografar               |  Descriptografar
 :-------------------------:|:-------------------------:
-![ScreenShot](/img/subsEnc.PNG)  |  ![ScreenShot](/img/subsDec.PNG)
+![ScreenShot](/Reimplementação%20do%20Trabalho%201/img/subsEnc.PNG)  |  ![ScreenShot](/Reimplementação%20do%20Trabalho%201/img/subsDec.PNG)
 
 #####Utilização:
     1-Selecione um arquivo.
@@ -35,7 +35,7 @@ Nessa cifra é formada uma matriz onde a quantidade de linhas é igual ao valor 
 
 Criptografar               |  Descriptografar
 :-------------------------:|:-------------------------:
-![ScreenShot](/img/transEnc.PNG)  |  ![ScreenShot](/img/transpDec.PNG)
+![ScreenShot](/Reimplementação%20do%20Trabalho%201/img/transEnc.PNG)  |  ![ScreenShot](/Reimplementação%20do%20Trabalho%201/img/transpDec.PNG)
 
 #####Utilização
     1-Selecione um arquivo.
@@ -47,7 +47,7 @@ Semelhante a cifra de César, nessa cifra utiliza-se como senha uma palavra ou f
 
 Criptografar               |  Descriptografar
 :-------------------------:|:-------------------------:
-![ScreenShot](/img/vigEnc.PNG)  |  ![ScreenShot](/img/vigDec.PNG)
+![ScreenShot](/Reimplementação%20do%20Trabalho%201/img/vigEnc.PNG)  |  ![ScreenShot](/Reimplementação%20do%20Trabalho%201/img/vigDec.PNG)
 
 #####Utilização
     1-Selecione um arquivo.
