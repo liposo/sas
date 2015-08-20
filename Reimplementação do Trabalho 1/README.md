@@ -3,14 +3,14 @@ Implementação em Java de quatro métodos clássicos de criptografia.
 
 Main                       |  Arquivo Selecionado
 :-------------------------:|:-------------------------:
-![]https://raw.githubusercontent.com/liposo/sas/master/Reimplementa%C3%A7%C3%A3o%20do%20Trabalho%201/img/main.PNG  |  ![]https://raw.githubusercontent.com/liposo/sas/master/Reimplementa%C3%A7%C3%A3o%20do%20Trabalho%201/img/mainSelectedFile.PNG
+![ScreenShot](/img/main.PNG)|![ScreenShot](/img/mainSelectedFile.PNG)
 
 #### 1- Cifra de César:
 Tipo de cifra de substituição em que cada caractere é movido um número fixo de vezes.
 
 Criptografar               |  Descriptografar
 :-------------------------:|:-------------------------:
-![]https://raw.githubusercontent.com/liposo/sas/master/Reimplementa%C3%A7%C3%A3o%20do%20Trabalho%201/img/cesarEnc.PNG  |  ![]https://raw.githubusercontent.com/liposo/sas/master/Reimplementa%C3%A7%C3%A3o%20do%20Trabalho%201/img/cesarDec.PNG
+![ScreenShot](/img/cesarEnc.PNG)  |  ![ScreenShot](/img/cesarDec.PNG)
 
 #####Utilização:
     1-Selecione um arquivo.
@@ -23,7 +23,7 @@ elemento correspondente da tabela.
 
 Criptografar               |  Descriptografar
 :-------------------------:|:-------------------------:
-![]https://raw.githubusercontent.com/liposo/sas/master/Reimplementa%C3%A7%C3%A3o%20do%20Trabalho%201/img/subsEnc.PNG  |  ![]https://raw.githubusercontent.com/liposo/sas/master/Reimplementa%C3%A7%C3%A3o%20do%20Trabalho%201/img/subsDec.PNG
+![ScreenShot](/img/subsEnc.PNG)  |  ![ScreenShot](/img/subsDec.PNG)
 
 #####Utilização:
     1-Selecione um arquivo.
@@ -35,7 +35,7 @@ Nessa cifra é formada uma matriz onde a quantidade de linhas é igual ao valor 
 
 Criptografar               |  Descriptografar
 :-------------------------:|:-------------------------:
-![]https://raw.githubusercontent.com/liposo/sas/master/Reimplementa%C3%A7%C3%A3o%20do%20Trabalho%201/img/transEnc.PNG  |  ![]https://raw.githubusercontent.com/liposo/sas/master/Reimplementa%C3%A7%C3%A3o%20do%20Trabalho%201/img/transpDec.PNG
+![ScreenShot](/img/transEnc.PNG)  |  ![ScreenShot](/img/transpDec.PNG)
 
 #####Utilização
     1-Selecione um arquivo.
@@ -47,7 +47,7 @@ Semelhante a cifra de César, nessa cifra utiliza-se como senha uma palavra ou f
 
 Criptografar               |  Descriptografar
 :-------------------------:|:-------------------------:
-![]https://raw.githubusercontent.com/liposo/sas/master/Reimplementa%C3%A7%C3%A3o%20do%20Trabalho%201/img/vigEnc.PNG  |  ![]https://raw.githubusercontent.com/liposo/sas/master/Reimplementa%C3%A7%C3%A3o%20do%20Trabalho%201/img/vigDec.PNG
+![ScreenShot](/img/vigEnc.PNG)  |  ![ScreenShot](/img/vigDec.PNG)
 
 #####Utilização
     1-Selecione um arquivo.
