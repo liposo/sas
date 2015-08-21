@@ -3,8 +3,7 @@ Implementação em Java de quatro métodos clássicos de criptografia.
 
 Main                       |  Arquivo Selecionado
 :-------------------------:|:-------------------------:
-![ScreenShot](/Reimplementação%20do%20Trabalho%201/img/main.PNG)  |
-![ScreenShot](/Reimplementação%20do%20Trabalho%201/img/mainSelectedFile.PNG)
+![ScreenShot](/Reimplementação%20do%20Trabalho%201/img/main.PNG)|![ScreenShot](/Reimplementação%20do%20Trabalho%201/img/mainSelectedFile.PNG)
 
 #### 1- [Cifra de César](https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar):
 Tipo de cifra de substituição em que cada caractere é movido um número fixo de vezes.
@@ -48,8 +47,7 @@ Semelhante a cifra de César, nessa cifra utiliza-se como senha uma palavra ou f
 
 Criptografar               |  Descriptografar
 :-------------------------:|:-------------------------:
-![ScreenShot](/Reimplementação%20do%20Trabalho%201/img/vigEnc.PNG)  |  
-![ScreenShot](/Reimplementação%20do%20Trabalho%201/img/vigDec.PNG)
+![ScreenShot](/Reimplementação%20do%20Trabalho%201/img/vigEnc.PNG)|![ScreenShot](/Reimplementação%20do%20Trabalho%201/img/vigDec.PNG)
 
 #####Utilização:
     1-Selecione um arquivo.
