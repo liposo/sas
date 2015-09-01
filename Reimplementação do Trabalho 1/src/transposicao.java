@@ -99,15 +99,22 @@ public class transposicao extends JFrame {
 				linha = new Integer[chave];
 			}
 		}
-
-		int nZeros = 0;
+		
+		int originalSize = list.getlength();
 		if(idxLinha != 0 ){
 			while(idxLinha < chave) {
 				linha[idxLinha] = 0;
 				idxLinha++;
-				++nZeros;
 			}
-			linha[linha.length-1] = nZeros;
+			linha[linha.length-1] = originalSize;
+			encryptedfileByteIntList.add(linha);
+		} else {
+			linha = new Integer[chave];
+			while(idxLinha < chave) {
+				linha[idxLinha] = 0;
+				idxLinha++;
+			}
+			linha[linha.length-1] = originalSize;
 			encryptedfileByteIntList.add(linha);
 		}
 		
@@ -162,7 +169,7 @@ public class transposicao extends JFrame {
 		}
 
 		Integer[] ultimaLinha = decryptedfileByteIntList.get(decryptedfileByteIntList.size()-1);
-		int qtdeZeros = ultimaLinha[ultimaLinha.length-1];
+		int qtdeZeros = list.getlength() - ultimaLinha[ultimaLinha.length-1];
 		
 		ultimaLinha = Arrays.copyOf(ultimaLinha, ultimaLinha.length-qtdeZeros);
 		decryptedfileByteIntList.remove(decryptedfileByteIntList.size()-1);
