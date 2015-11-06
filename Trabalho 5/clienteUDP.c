@@ -36,11 +36,11 @@ int main(void) {
     }
     
     msgEnviada[0] = 'F';
-	msgEnviada[1] = 'U';
-	msgEnviada[2] = 'N';
-	msgEnviada[3] = 'C';
-	msgEnviada[4] = 'I';
-	msgEnviada[5] = 'O';
+    msgEnviada[1] = 'U';
+    msgEnviada[2] = 'N';
+    msgEnviada[3] = 'C';
+    msgEnviada[4] = 'I';
+    msgEnviada[5] = 'O';
 	msgEnviada[6] = 'N';
 	msgEnviada[7] = 'A';
 	msgEnviada[8] = '?';
