@@ -41,28 +41,27 @@ int main(void) {
     msgEnviada[3] = 'C';
     msgEnviada[4] = 'I';
     msgEnviada[5] = 'O';
-	msgEnviada[6] = 'N';
-	msgEnviada[7] = 'A';
-	msgEnviada[8] = '?';
-	msgEnviada[9] = 0;
+    msgEnviada[6] = 'N';
+    msgEnviada[7] = 'A';
+    msgEnviada[8] = '?';
+    msgEnviada[9] = 0;
 
-	for(i = 9; i < 231; i++){
-		msgEnviada[i] = ' ';	
-	}
+    for(i = 9; i < 231; i++){
+        msgEnviada[i] = ' ';	
+    }
 
-	msgEnviada[232] = 0xdc;
-	msgEnviada[233] = 0x07;
-	msgEnviada[234] = 0x40;
-	msgEnviada[235] = 0x00;
-	msgEnviada[236] = 0x00;
-	msgEnviada[237] = 0x00;
-	msgEnviada[238] = 0x00;
-	msgEnviada[239] = 0x00;
+    msgEnviada[232] = 0xdc;
+    msgEnviada[233] = 0x07;
+    msgEnviada[234] = 0x40;
+    msgEnviada[235] = 0x00;
+    msgEnviada[236] = 0x00;
+    msgEnviada[237] = 0x00;
+    msgEnviada[238] = 0x00;
+    msgEnviada[239] = 0x00;
 	
+    //printf("\n%d\n", strlen(msgEnviada)); Foi usado para determinar +9 em (strlen(msgEnviada)+9)
 	
-	//printf("\n%d\n", strlen(msgEnviada)); Foi usado para determinar +9 em (strlen(msgEnviada)+9)
-	
-	sendto(s, msgEnviada, (strlen(msgEnviada)+9), 0, (struct sockaddr*)&si_other, sizeof(si_other));
+    sendto(s, msgEnviada, (strlen(msgEnviada)+9), 0, (struct sockaddr*)&si_other, sizeof(si_other));
 	
     n = recvfrom(s, msgResposta, 10000, 0, NULL, NULL);
    
