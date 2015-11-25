@@ -21,4 +21,4 @@ Para calcular pares de números e e d:
 	Calcular d = e-1 (mod φ(N))
 
 ##Versão 0.1
-![Alt tag]()
+![Alt tag](https://raw.githubusercontent.com/liposo/sas/master/Trabalho8/img/main.PNG)
