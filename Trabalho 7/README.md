@@ -16,4 +16,4 @@ Escolher um numero a e um numero N, tal que a e’ uma raiz primitiva modulo N.
 Mostrar todos os valores intermediarios.
 
 ##Versão 0.1
-![Alt tag](https://raw.githubusercontent.com/liposo/sas/master/Trabalho\7/img/main.PNG)
+![Alt tag](https://raw.githubusercontent.com/liposo/sas/master/Trabalho%207/img/main.PNG)
