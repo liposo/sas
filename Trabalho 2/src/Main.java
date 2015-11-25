@@ -154,11 +154,23 @@ public class Main {
 		
 		transpBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				try {
+					new transposicao(fileOriginal, fileEncrypted);
+				} catch (Exception e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 			}
 		});
 		
 		vigBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				try {
+					new vigenere(fileOriginal, fileEncrypted);
+				} catch (Exception e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 			}
 		});
 	}

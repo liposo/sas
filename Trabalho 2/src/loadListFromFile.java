@@ -56,4 +56,24 @@ public class loadListFromFile {
 	public int getEncryptedBytesLen() {
 		 return encryptedBytesLen;
 	}
+	
+	public int[] encryptedAsPrimitiveIntArray() {
+		int[] intArray = new int[getEncryptedBytesLen()];
+		int value = 0;
+		for(int i=0; i<getEncryptedBytesLen(); i++) {
+			value = getEncryptedByteIntList().get(i);
+			intArray[i] = value;
+		}
+		return intArray;
+	}
+	
+	public int[] originalAsPrimitiveIntArray() {
+		int[] intArray = new int[getOriginalByteslen()];
+		int value = 0;
+		for(int i=0; i<getOriginalByteslen(); i++) {
+			value = getOriginalByteIntList().get(i);
+			intArray[i] = value;
+		}
+		return intArray;
+	}
 }

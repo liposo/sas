@@ -33,7 +33,7 @@ public class vigenere {
 					}
 					confirma = true;
 				} else {
-					if(chaveVigenere[i] != ((list.getEncryptedByteIntList().get(i) - list.getOriginalByteIntList().get(i)))%255){
+					if(chaveVigenere[i] != ((list.getEncryptedByteIntList().get(i) - list.getOriginalByteIntList().get(i)))){
 						confirma = false;
 						break;
 					}
@@ -81,13 +81,13 @@ public class vigenere {
 		//System.out.println(chaveString.length());
 		
 		List<String> chaveList = Arrays.asList(chaveString.split(""));
-		List<Character> uniqueChars = new ArrayList<Character>();
-		int i=0;
-        Set<String> uniqueWords = new HashSet<String>(chaveList);
-        for (String word : uniqueWords) {
+		//List<Character> uniqueChars = new ArrayList<Character>();
+		//int i=0;
+        //Set<String> uniqueWords = new HashSet<String>(chaveList);
+        //for (String word : uniqueWords) {
             //System.out.println(word + ": " + Collections.frequency(chaveList, word));
-            uniqueChars.add(word.charAt(i));
-        }
+        //    uniqueChars.add(word.charAt(i));
+        //}
 //        for(int a=0; a<uniqueChars.size(); a++) {
 //        	//System.out.print(uniqueChars.get(a));
 //        	memo.append(uniqueChars.get(a).toString());
@@ -104,8 +104,6 @@ public class vigenere {
             // Split it.
         	String[] parts = repeated.split("-");
         	chaveFinal = parts[0]; 
-        } else {
-            throw new IllegalArgumentException("String " + repeated + " does not contain -");
         }
         //memo.append(chaveFinal);
         return chaveFinal;
